@@ -1,0 +1,115 @@
+html, body {
+  margin: 0;
+  padding; 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-weight: 100;
+}
+
+/* Start of hero */
+.hero-container {
+  background-image: url("https://stopthehitch.files.wordpress.com/2013/06/arnold-schwarzenegger-1920x1080.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container h1 {
+  font-size: 2.5em;
+  background-color: #F4D03F;
+  border-bottom: 0.3em solid white;
+  color: white;
+  float: left;
+  position: absolute;
+  left: 2.2em;
+  top: 2em;
+  padding: 1em;
+  letter-spacing: 0.1em; 
+}
+/*End of hero */
+
+/* Start of quote*/
+
+.quote-container {
+  padding: 50px 0;
+}
+
+.col-12-12 {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1.5em;
+	line-height: 1.9em;
+	text-align: center;
+
+}
+
+.quotes {
+  color: #F4D03F;
+}
+/*End of quote*/
+
+/* Start of learn more*/
+.more-container {
+	padding: 3em 0 3em 0;
+	text-align: center;
+}
+
+#more-button {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.more-container a {
+	text-decoration: none;
+	border: 1px solid #F4D03F;
+	color: #F4D03F;
+	border-radius: 3%;
+	font-weight: bold;
+	padding: 0.95em 1.3em;
+}
+
+.more-container a:hover {
+	background: #F4D03F;
+	color: white;
+	transition: background 0.4s ease,
+				color 0.4s ease;
+}
+
+
+/* MEDIA QUERIES*/
+
+
+/*Ipads*/
+@media only screen and (max-width: 1024px){
+	.col-12-12 {
+		font-size: 1.3em;
+		line-height: 1.5em;
+	}
+	.hero-container h1 {
+		font-size: 2.2em;
+		padding: 0.7em;
+		left: 1.4em;
+		top: 2.0em;
+	}
+
+}
+
+/*(newer) Iphones*/
+@media only screen and (max-width: 640px) {
+	.col-12-12 {
+		font-size: 1.2em;
+		line-height: 1.3em;
+	}
+	.hero-container h1 {
+		font-size: 2.0em;
+	}
+}
